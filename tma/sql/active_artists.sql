@@ -1,1 +1,1 @@
-select artist.name, count(song.id) as noOfSongs from artist left join song on (artist.id = song.artist_id) where (song.id > 0) group by artist.name ;
+select artist.name, count(song.id) as noOfSongs from artist inner join song on (artist.id = song.artist_id) where (song.id <> 0) group by artist.name ;

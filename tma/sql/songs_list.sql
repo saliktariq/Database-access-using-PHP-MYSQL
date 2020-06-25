@@ -1,0 +1,1 @@
+select song.title, artist.name, song.duration from artist join song on (artist.id = song.artist_id) order by artist.name,song.title ASC;

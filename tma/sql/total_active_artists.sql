@@ -1,0 +1,1 @@
+select count(distinct artist.id) as noOfArtists from artist left join song on (artist.id = song.artist_id) where (song.duration > 0); #source: https://www.mysqltutorial.org/mysql-count/

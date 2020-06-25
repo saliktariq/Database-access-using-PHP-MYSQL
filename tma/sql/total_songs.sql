@@ -1,0 +1,1 @@
+select count(*) as totalSongs from song; #source: https://www.mysqltutorial.org/mysql-count/

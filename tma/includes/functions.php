@@ -19,4 +19,9 @@ function createConnection(){
     }
     return $connection;
 }
+
+function queryDB($link,$sql){
+    $result = $link->query($sql);
+    return $result;
+}
 ?>

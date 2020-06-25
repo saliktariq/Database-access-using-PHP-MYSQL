@@ -1,0 +1,7 @@
+$sql = 'SELECT * from song';
+$result = $connection->query($sql);
+//learnt at: https://phpdelusions.net/pdo_examples/select
+while($row = $result->fetch()){
+    echo $row['title']."<br />\n";
+}
+

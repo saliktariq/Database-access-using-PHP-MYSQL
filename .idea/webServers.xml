@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="aabec37e-11ce-4e22-8bea-574c7cce3059" name="TITAN" url="http://titan.dcs.bbk.ac.uk/~mtariq01/w1tma">
+        <fileTransfer host="titan.dcs.bbk.ac.uk" port="21">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

@@ -1,4 +1,17 @@
 <?php
+
+//source: Mr Ian Hollender HOE:7/8
+function parseTemplate($template, $templateData) {
+
+    foreach($templateData as $key => $value) {
+        $template = str_replace($key, $value, $template);
+    }
+    return $template;
+}
+
+
+
+
 function songLengthToMinSec($time){
     $result = date('i:s',$time);
     return $result;

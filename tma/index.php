@@ -3,6 +3,7 @@ require_once('includes/functions.php');
 require_once('includes/sql_queries.php');
 require_once('includes/config.inc.php');
 require_once('lang/'.$config['language'].'.php');
+
 spl_autoload_register('MyAutoloader');
 
 if(!isset($_GET['page'])){

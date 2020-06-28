@@ -13,31 +13,19 @@
 
 
 }
-#toplinks {
+#languageSelector {
     text-align: right;
-    margin-right: 3%;
+    //margin-right: 3%;
+    background-color: burlywood;
+    width: 100%;
 
 }
-#toplinks ul {
-    margin: 1rem 0.76rem;
-    float: right;
 
-}
-#toplinks li {
-    display: inline-block;
-    list-style: none;
-    font-size: smaller;
-
-
-
-}
-#toplinks a {
-    text-decoration: none;
-    color: black;
-    letter-spacing: 0.07rem;
-}
-#toplinks a:hover {
-    color: rgb(157,44,32);
+#contentCounter{
+    text-align: left;
+    background-color: antiquewhite;
+    font-size: 90%;
+    color: dimgray;
 }
 #mainnav {
     text-align: center;
@@ -70,6 +58,10 @@
 #mainnav a:hover, #secondary a:hover {
     color: #9D2C20;
 }
+h1, #main-text{
+    margin-top: 2rem;
+}
+
 footer {
     background-color: burlywood;
     text-align: center;

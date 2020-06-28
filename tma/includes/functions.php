@@ -22,6 +22,7 @@ function myAutoloader($class) {
 
 function createConnection(){
     include('config.inc.php');
+    include('../classes/MyPDO.php');
     try{
         $connection = new MyPDO($config['dsn'],$config['db_user'],$config['db_pass'],$config['pdo_options']);
     }
@@ -34,7 +35,13 @@ function createConnection(){
 }
 
 function queryDB($link,$sql){
-    $result = $link->query($sql);
+    $dataQ = $link->prepare($sql);
+    $dataQ->execute();
+    $result = array();    //source: https://stackoverflow.com/questions/26151048/loop-through-the-data-in-pdo
+     while($row = $dataQ->fetch(PDO::FETCH_ASSOC)){
+         $result[] = $row;
+     }
+
     return $result;
 }
 ?>

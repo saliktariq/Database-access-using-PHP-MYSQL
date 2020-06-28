@@ -66,3 +66,22 @@ footer {
     background-color: burlywood;
     text-align: center;
 }
+table{
+    border: 1px solid black;
+
+  //  margin-left: 0%;
+
+}
+
+th{
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: center;
+    border-left: 1px solid black;
+    }
+th:first-child{
+    border-left: 0px;
+}
+

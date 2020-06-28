@@ -1,0 +1,76 @@
+
+/*Applying CSS reset*/
+* {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+#wrapper {
+    border: 0px solid black;
+    margin: 0.75rem auto;
+    width: 90%;
+
+
+}
+#toplinks {
+    text-align: right;
+    margin-right: 3%;
+
+}
+#toplinks ul {
+    margin: 1rem 0.76rem;
+    float: right;
+
+}
+#toplinks li {
+    display: inline-block;
+    list-style: none;
+    font-size: smaller;
+
+
+
+}
+#toplinks a {
+    text-decoration: none;
+    color: black;
+    letter-spacing: 0.07rem;
+}
+#toplinks a:hover {
+    color: rgb(157,44,32);
+}
+#mainnav {
+    text-align: center;
+    background-color: blanchedalmond;
+    clear: both;
+
+
+}
+#mainnav li {
+    display: inline-block;
+    list-style: none;
+
+}
+#mainnav a {
+    text-decoration: none;
+    letter-spacing: 0.07em;
+    padding: 0.5rem;
+    border-right: 1px solid hsl(6, 66%, 37%);
+    text-align: center;
+    color: black;
+    font-weight: bolder;
+    display: inline-block;
+    min-width: 200px;
+
+}
+#mainnav li:first-child a {
+    border-left: 1px solid #9D2C20;
+}
+
+#mainnav a:hover, #secondary a:hover {
+    color: #9D2C20;
+}
+footer {
+    background-color: burlywood;
+    text-align: center;
+}

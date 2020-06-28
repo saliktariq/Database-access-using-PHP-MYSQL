@@ -13,6 +13,7 @@ $config['pdo_options'] = [
     \PDO::ATTR_EMULATE_PREPARES   => false,
 ]; // learnt this at https://phpdelusions.net/pdo_examples/connect_to_mysql
 
+$config['language'] = 'en';
 
 
 

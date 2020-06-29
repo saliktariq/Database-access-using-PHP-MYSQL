@@ -1,5 +1,7 @@
 <?php
 $lang['page_title'] = 'W1 Music';
+$lang['total_active_artists'] = 'Total Active Artists: ';
+$lang['total_songs'] = ' Total Songs: ';
 
 /*
  * Text entries for the home page

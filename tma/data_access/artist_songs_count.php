@@ -7,7 +7,7 @@ $sql = array(
     $sqlQuery2
 );
 $connection = createConnection();
-$result = 'Total active Artist: ';
+$result = $lang['total_active_artists'];
 for ($query = 0; $query < 2; $query++) {
     $dataArray = queryDB($connection, $sql[$query]);
     if ($dataArray === false) {
@@ -24,7 +24,7 @@ for ($query = 0; $query < 2; $query++) {
         }
         foreach ($dataArray as $key => $value) {
             if (isset($value['totalSongs'])) {
-                $result .= ' Total Songs: ' . $value['totalSongs'];
+                $result .= $lang['total_songs'] . $value['totalSongs'];
             }
 
         }

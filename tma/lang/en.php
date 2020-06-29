@@ -6,7 +6,7 @@ $lang['page_title'] = 'W1 Music App';
  */
 
 $lang['main_heading'] = 'Welcome to the Home Page';
-$lang['home_description'] = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.';
+$lang['home_description'] = 'This is the home page for W1 Music App that retrieves data about various artists and their songs. The data is stored securely in MySQL server. Data retrieval is made possible through PHP programming language.';
 
 /*
  * Text entries for artists page

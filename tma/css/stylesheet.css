@@ -65,23 +65,21 @@ h1, #main-text{
 footer {
     background-color: burlywood;
     text-align: center;
+    margin-top: 5rem;
 }
-table{
-    border: 1px solid black;
-
-  //  margin-left: 0%;
-
-}
-
-th{
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-top: 5px;
-    padding-bottom: 5px;
+table {
+    border-collapse: collapse;
     text-align: center;
-    border-left: 1px solid black;
-    }
-th:first-child{
-    border-left: 0px;
 }
 
+table, td, th {
+    border: 1px solid black;
+}
+th {
+    height: 50px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+td {
+    padding: 1rem;
+}

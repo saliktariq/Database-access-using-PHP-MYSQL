@@ -22,7 +22,7 @@ function myAutoloader($class) {
 
 function createConnection(){
     include('config.inc.php');
-    include('../classes/MyPDO.php');
+    include('classes/MyPDO.php');
     try{
         $connection = new MyPDO($config['dsn'],$config['db_user'],$config['db_pass'],$config['pdo_options']);
     }

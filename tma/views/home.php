@@ -9,5 +9,6 @@ $content =  parseTemplate($content,$templateData);
 
 
 echo $content;
+include_once ('templates/footer.html');
 ?>
 

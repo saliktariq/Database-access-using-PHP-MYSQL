@@ -1,4 +1,3 @@
-
 /*Applying CSS reset*/
 * {
     padding: 0;
@@ -15,21 +14,25 @@
 }
 #languageSelector {
     text-align: right;
-    //margin-right: 3%;
-    background-color: burlywood;
+    background-color: #8D8741;
     width: 100%;
 
 }
+#myList{
+    margin-right: 1rem;
+}
 
 #contentCounter{
+    padding-left: 2rem;
     text-align: left;
-    background-color: antiquewhite;
+    background-color: #DAAD86;
     font-size: 90%;
-    color: dimgray;
+    color: black;
+
 }
 #mainnav {
     text-align: center;
-    background-color: blanchedalmond;
+    background-color: #659DBD;
     clear: both;
 
 
@@ -60,26 +63,36 @@
 }
 h1, #main-text{
     margin-top: 2rem;
+    margin-left: 2rem;
 }
 
 footer {
-    background-color: burlywood;
+    background-color: #BC986A;
     text-align: center;
     margin-top: 5rem;
 }
 table {
     border-collapse: collapse;
     text-align: center;
+    margin-left: 2rem;
 }
 
-table, td, th {
+#artistTable, td, th {
     border: 1px solid black;
+    text-align: left;
 }
 th {
     height: 50px;
     padding-left: 1rem;
     padding-right: 1rem;
+    background-color: #659DBD;
 }
 td {
     padding: 1rem;
+}
+
+
+div {
+    background-color: #FBEEC1;
+
 }

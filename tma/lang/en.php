@@ -16,5 +16,12 @@ $lang['no_of_songs'] = 'Number of Songs';
 $lang['artist_heading'] = 'Welcome to Artist Page';
 $lang['artist_description'] = ''; // keeping this entry for consistency of style and if requirements change in future to add a description
 
+/*
+ * Text entries for songs page
+ */
 
+$lang['song_title'] = 'Song Title';
+$lang['song_duration'] = 'Song Duration';
+$lang['song_heading'] = 'Welcome to the Songs Page';
+$lang['song_description'] = ''; // keeping this entry for consistency of style and if requirements change in future to add a description
 

@@ -1,15 +1,12 @@
 <?php
-
 //source: Mr Ian Hollender HOE:7/8
 function parseTemplate($template, $templateData)
 {
-
     foreach ($templateData as $key => $value) {
         $template = str_replace($key, $value, $template);
     }
     return $template;
 }
-
 
 function songLengthToMinSec($time)
 {
@@ -30,7 +27,6 @@ function createConnection()
         $connection = new MyPDO($config['dsn'], $config['db_user'], $config['db_pass'], $config['pdo_options']);
     } catch (PDOException $e) {
         $connection = null;
-
         die($e->getMessage());
     }
     return $connection;
@@ -44,12 +40,17 @@ function queryDB($link, $sql)
     while ($row = $dataQ->fetch(PDO::FETCH_ASSOC)) {
         $result[] = $row;
     }
-   // $dataQ = null;
-
+    $dataQ = null;
     return $result;
-
 }
 
-
-
-?>
+function renderStaticPage($heading, $description, $htmlContent)
+{
+    $templateData = array(
+        "{{HEADING}}" => $heading,
+        "{{CONTENT}}" => $description
+    );
+    $htmlContent .= file_get_contents('templates/page.html');
+    $htmlContent = parseTemplate($htmlContent, $templateData);
+    return $htmlContent;
+}

@@ -1,28 +1,14 @@
 <?php
 include_once('includes/page_top.php');
 require_once 'data_access/fill_artist_page.php';
-$templateData = array(
-    "{{HEADING}}"=>$lang['artist_heading'],
-    "{{CONTENT}}"=>$lang['artist_description']
-);
-$content .= file_get_contents('templates/page.html');
-
-$content =  parseTemplate($content,$templateData);
-//generating table heading
+$content = renderStaticPage($lang['artist_heading'], $lang['artist_description'], $content);
 $tableHeader = array(
     "{{ARTIST_NAME}}" => $lang['artist_name'],
     "{{NO_OF_SONGS}}" => $lang['no_of_songs']
 );
 $content .= file_get_contents('templates/artistTable.html');
-
-
-
-$content = parseTemplate($content,$tableHeader);
-
-
-$content = str_replace('{{TABLE_BODY}}',$result,$content);
+$content = parseTemplate($content, $tableHeader);
+$content = str_replace('{{TABLE_BODY}}', $result, $content);
 echo $content;
-
-
-include_once ('templates/footer.html');
+include_once('templates/footer.html');
 ?>

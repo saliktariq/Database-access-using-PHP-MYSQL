@@ -25,3 +25,9 @@ $lang['song_duration'] = 'Song Duration';
 $lang['song_heading'] = 'Welcome to the Songs Page';
 $lang['song_description'] = ''; // keeping this entry for consistency of style and if requirements change in future to add a description
 
+/*
+ * Text entries for error page
+ */
+
+$lang['error_heading'] = 'Page Not Found';
+$lang['error_description'] = 'Oh No! We can not find what you are looking for. ';

@@ -76,3 +76,4 @@ must be done here.
 UPDATE_LANGUAGE.PHP: This file updates the language setting in the config.inc.php file as per user choice.
 
 
+Salik Tariq. Student ID: 12516369

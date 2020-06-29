@@ -1,2 +1,0 @@
-<?php
-$testConfig['language'] = 'en';

@@ -1,6 +1,6 @@
 <?php
 include_once('includes/page_top.php');
-include_once 'data_access/fill_artist_page.php';
+require_once 'data_access/fill_artist_page.php';
 $templateData = array(
     "{{HEADING}}"=>$lang['artist_heading'],
     "{{CONTENT}}"=>$lang['artist_description']

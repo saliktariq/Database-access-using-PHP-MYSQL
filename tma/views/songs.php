@@ -1,6 +1,6 @@
 <?php
 include_once('includes/page_top.php');
-include_once 'data_access/fill_songs_page.php';
+require_once 'data_access/fill_songs_page.php';
 $templateData = array(
     "{{HEADING}}"=>$lang['song_heading'],
     "{{CONTENT}}"=>$lang['song_description']

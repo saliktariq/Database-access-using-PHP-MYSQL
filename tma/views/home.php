@@ -8,6 +8,7 @@ $content .= file_get_contents('templates/page.html');
 $content =  parseTemplate($content,$templateData);
 
 
+
 echo $content;
 include_once ('templates/footer.html');
 ?>

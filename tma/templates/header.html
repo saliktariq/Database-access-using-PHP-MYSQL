@@ -1,27 +1,29 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <title>{{TITLE}}</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="css/stylesheet.css"/>
 </head>
 <body>
 <div id="wrapper">
     <header>
         <nav id="languageSelector">
-            <form>
+            <form method="post" action = 'includes/update_language.php'>
                 <fieldset>
                         <p>
                             <label>
                                Site Language
                             </label>
-                            <select id="myList">
-                                <option value = "en">English</option>
-                                <option value = "ro">Romanian</option>
+                            <select name ="chooseLanguage" id="myList" >
+                                <option value = 'en'>English</option>
+                                <option value = 'ro'>Romanian</option>
                             </select>
+                            <input type="submit" name="setLanguage" value="Set Language"/>
                         </p>
 
                 </fieldset>
+
             </form>
         </nav>
         <div id="contentCounter">

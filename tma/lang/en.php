@@ -1,5 +1,5 @@
 <?php
-$lang['page_title'] = 'W1 Music App';
+$lang['page_title'] = 'W1 Music';
 
 /*
  * Text entries for the home page

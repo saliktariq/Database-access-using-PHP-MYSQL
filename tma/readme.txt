@@ -67,8 +67,7 @@ FUNCTIONS.PHP:
 
 This file contains all the functions that help to make the code precise.
 
-PAGE_TOP.PHP: This file updates the title, heading and description of the page along with information with regard to
-the number of records in the database.
+PAGE_TOP.PHP: This file updates the page header along with total songs and active artist information.
 
 SQL_QUERIES.PHP: This file contains variables containing the SQL queries used in the application. Any changes to the queries
 must be done here.

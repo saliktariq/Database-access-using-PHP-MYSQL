@@ -1,4 +1,11 @@
 <?php
+/*
+ * conține tot textul static găsit în aplicație.
+ * Orice text afișat în aplicație poate fi modificat modificând variabila matrică relevantă $ lang [].
+ * DECLARATION: Google translation is used to make all the translations
+ */
+
+// Application heading
 $lang['page_title'] = 'W1 Muzica';
 $lang['total_active_artists'] = 'Total Artisti Activi: ';
 $lang['total_songs'] = ' Cantece Totale: ';
@@ -33,3 +40,4 @@ $lang['song_description'] = ''; // păstrând această intrare pentru consecven�
 
 $lang['error_heading'] = 'Pagina nu a fost gasita';
 $lang['error_description'] = 'Oh nu! Nu putem gasi ceea ce cautați. ';
+?>

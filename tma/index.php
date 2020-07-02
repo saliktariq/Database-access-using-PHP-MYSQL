@@ -1,14 +1,23 @@
 <?php
 
 /*
- * This is the only point of entry into the application
+ * This page is the only point of entry into the application
  */
+
+//implementing language choice using sessions to remember the choice
+session_start();
+
 
 // importing required php files
 require_once('includes/functions.php');
 require_once('includes/sql_queries.php');
 require_once('includes/config.inc.php');
-require_once('lang/' . $config['language'] . '.php');
+if(isset($_SESSION['language'])){
+    require('lang/' . $_SESSION['language'] . '.php');
+} else{
+    require('lang/' . $config['language'] . '.php');
+}
+
 
 // Loading the MyAutoloader function
 spl_autoload_register('MyAutoloader');

@@ -105,4 +105,16 @@ function renderStaticPage($heading, $description, $htmlContent)
     $htmlContent = parseTemplate($htmlContent, $templateData);
     return $htmlContent;
 }
+
+/*
+ * Function to set preferred language of the Application
+ * @param $languageChoice String containing target language choice
+ * @return include string to return relevant language file
+ * @author Salik Tariq
+ * @date 02 July 2020
+ */
+
+function setLanguage($languageChoice){
+    include('lang/' . htmlentities($languageChoice) . '.php');
+}
 ?>

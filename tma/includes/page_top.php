@@ -2,6 +2,7 @@
 /*
  * This file updates the page header along with total songs and active artist information.
  */
+
 require_once('data_access/artist_songs_count.php');
 $content = file_get_contents('templates/header.html');
 // Replacing the html {{LABELS}} from templates with actual data.

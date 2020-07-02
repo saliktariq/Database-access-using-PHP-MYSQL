@@ -4,7 +4,7 @@
  * This page is the only point of entry into the application
  */
 
-//implementing language choice using sessions to remember the choice
+//implementing locale using sessions to remember the choice
 session_start();
 
 
@@ -12,6 +12,8 @@ session_start();
 require_once('includes/functions.php');
 require_once('includes/sql_queries.php');
 require_once('includes/config.inc.php');
+
+
 if(isset($_SESSION['language'])){
     require('lang/' . $_SESSION['language'] . '.php');
 } else{

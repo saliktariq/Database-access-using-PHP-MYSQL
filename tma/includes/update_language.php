@@ -13,5 +13,5 @@ if (isset($_POST['chooseLanguage'])) { //checking if chooseLanguage drop down me
     fclose($file); // close the file
 }
 header("Location: ../index.php"); // redirect back to homepage
-exit();
+//exit();
 ?>

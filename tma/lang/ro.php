@@ -14,8 +14,8 @@ $lang['total_songs'] = ' Cantece Totale: ';
  * Intrări de text pentru pagina de pornire
  */
 
-$lang['main_heading'] = 'Bine ati venti la pagina principala';
-$lang['home_description'] = 'Al sau este pagina de pornire a aplicației muzicale W1 care preia date despre diverși artiști si melodiile lor. Datele sunt stocate în siguranța pe serverul MySQL. Recuperarea datelor este posibila prin intermediul limbajului de programare PHP';
+$lang['main_heading'] = 'Bine ati venti pe pagina principala';
+$lang['home_description'] = 'Aceasta este pagina de pornire a aplicației muzicale W1 care preia date despre diverși artiști si melodiile lor. Datele sunt stocate în siguranța pe serverul MySQL. Recuperarea datelor este posibila prin intermediul limbajului de programare PHP';
 
 /*
  * Intrări de text pentru pagina artiștilor

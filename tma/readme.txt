@@ -72,7 +72,7 @@ PAGE_TOP.PHP: This file updates the page header along with total songs and activ
 SQL_QUERIES.PHP: This file contains variables containing the SQL queries used in the application. Any changes to the queries
 must be done here.
 
-UPDATE_LANGUAGE.PHP: This file updates the language setting in the config.inc.php file as per user choice.
+SET_LANGUAGE.PHP: This file updates the language preference of the app user and loads relevent locale file.
 
 
 Salik Tariq. Student ID: 12516369

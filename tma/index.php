@@ -13,10 +13,11 @@ require_once('includes/functions.php');
 require_once('includes/sql_queries.php');
 require_once('includes/config.inc.php');
 
-
+// Checking if Session variable is set for custom language selection
 if(isset($_SESSION['language'])){
     require('lang/' . $_SESSION['language'] . '.php');
 } else{
+    // Load default language if session variable is not set
     require('lang/' . $config['language'] . '.php');
 }
 

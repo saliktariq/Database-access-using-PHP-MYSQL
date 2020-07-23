@@ -75,4 +75,4 @@ must be done here.
 SET_LANGUAGE.PHP: This file updates the language preference of the app user and loads relevent locale file.
 
 
-Salik Tariq. Student ID: 12516369
+Salik Tariq.
